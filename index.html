@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar sessão – Wikipédia, a enciclopédia livre</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #ffffff;
+            color: #202122;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            border-bottom: 1px solid #eaecf0;
+        }
+
+        .topo-esquerda {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .menu-icon {
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .logo-fake {
+            font-family: Georgia, serif;
+            font-size: 18px;
+            letter-spacing: 0.5px;
+        }
+
+        .topo-direita {
+            display: flex;
+            gap: 15px;
+            font-size: 13px;
+        }
+
+        .topo-direita a {
+            color: #36c;
+            text-decoration: none;
+        }
+
+        .conteudo-geral {
+            display: flex;
+        }
+
+        .coluna-login {
+            flex: 1;
+            padding: 40px 50px;
+            max-width: 750px;
+        }
+
+        h2 {
+            font-family: Georgia, serif;
+            font-weight: normal;
+            font-size: 28px;
+            margin: 0 0 8px 0;
+        }
+
+        .divisoria {
+            height: 1px;
+            background: #a2a9b1;
+            margin-bottom: 20px;
+        }
+
+        .alerta-azul {
+            display: flex;
+            gap: 12px;
+            font-size: 13.5px;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .ico-i {
+            background: #36c;
+            color: #fff;
+            border-radius: 50%;
+            width: 22px;
+            height: 22px;
+            text-align: center;
+            line-height: 22px;
+            font-weight: bold;
+            font-family: Georgia, serif;
+        }
+
+        .alerta-azul a {
+            color: #36c;
+            text-decoration: none;
+        }
+
+        .bloco-idiomas {
+            font-size: 11px;
+            color: #54595d;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .bloco-idiomas a {
+            color: #36c;
+            text-decoration: none;
+        }
+
+        form {
+            max-width: 380px;
+        }
+
+        .box-input {
+            margin-bottom: 16px;
+        }
+
+        .box-input label {
+            display: block;
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .box-input input[type="text"], 
+        .box-input input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #a2a9b1;
+            border-radius: 2px;
+            font-size: 14px;
+        }
+
+        .box-input input:focus {
+            outline: none;
+            border-color: #36c;
+        }
+
+        .manter {
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+            margin: 15px 0;
+        }
+
+        .manter input {
+            margin-right: 8px;
+        }
+
+        .btn-enviar {
+            width: 100%;
+            background: #36c;
+            color: #fff;
+            border: 1px solid #36c;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 14px;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .btn-enviar:hover {
+            background: #447ff5;
+        }
+
+        .links-ajuda {
+            text-align: center;
+            font-size: 13px;
+            margin-top: 15px;
+        }
+
+        .links-ajuda a {
+            display: block;
+            color: #36c;
+            text-decoration: none;
+            margin-bottom: 8px;
+        }
+
+        .barra-lateral {
+            width: 250px;
+            border-left: 1px solid #eaecf0;
+            padding: 20px;
+            font-size: 13px;
+        }
+
+        .topo-lateral {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .opcao-config {
+            margin-bottom: 25px;
+        }
+
+        .titulo-config {
+            color: #72777d;
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+
+        .item-radio {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .item-radio.off {
+            color: #c8ccd1;
+        }
+
+        .txt-cinza {
+            font-size: 12px;
+            color: #72777d;
+            margin-top: 5px;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="topo-esquerda">
+            <div class="menu-icon">☰</div>
+            <div class="logo-fake">WIKIPÉDIA</div>
+        </div>
+        <div class="topo-textos topo-direita">
+            <a href="#">Doar</a>
+            <a href="#">Criar conta</a>
+            <a href="#" style="color:#000; font-weight:bold;">Iniciar sessão</a>
+        </div>
+    </header>
+
+    <div class="conteudo-geral">
+        
+        <div class="coluna-login">
+            <h2>Iniciar sessão</h2>
+            <div class="divisoria"></div>
+
+            <div class="alerta-azul">
+                <div class="ico-i">i</div>
+                <div>
+                    <strong>Bem-vindo/a!</strong> Por <a href="#">decisão da comunidade</a>, é necessário estar regist(r)ado/a para editar ou criar artigos na Wikipédia lusófona.
+                </div>
+            </div>
+
+            <div class="bloco-idiomas">
+                Idioma: <a href="#">Alemannisch</a> | <a href="#">العربية</a> | <a href="#">Català</a> | <a href="#">Česky</a> | <a href="#">Dansk</a> | <a href="#">Deutsch</a> | <a href="#">English</a> | <a href="#">Español</a> | <a href="#">Français</a> | <a href="#">Italiano</a> | <a href="#">日本語</a> | <a href="#">Português do Brasil</a> | <a href="#">Русский</a> | <a href="#">中文</a>
+            </div>
+
+            <form action="#">
+                <div class="box-input">
+                    <label>Nome de utilizador(a)</label>
+                    <input type="text" placeholder="Introduza o seu nome de utilizador(a)" required>
+                </div>
+
+                <div class="box-input">
+                    <label>Palavra-passe</label>
+                    <input type="password" placeholder="Insira a sua palavra-passe" required>
+                </div>
+
+                <div class="manter">
+                    <input type="checkbox" id="conectado">
+                    <label for="conectado">Manter-me autenticado(a)</label>
+                </div>
+
+                <button type="submit" class="btn-enviar">Iniciar sessão</button>
+
+                <div class="links-ajuda">
+                    <a href="#">Ajuda para iniciar a sessão</a>
+                    <a href="#">Esqueceu-se da sua palavra-passe?</a>
+                </div>
+            </form>
+        </div>
+
+        <div class="barra-lateral">
+            <div class="topo-lateral">
+                <span>Aparência</span>
+                <span style="color:#72774d; font-size:12px; cursor:pointer;">ocultar</span>
+            </div>
+
+            <div class="opcao-config">
+                <div class="titulo-config">Texto</div>
+                <div class="item-radio off"><input type="radio" disabled> Pequeno</div>
+                <div class="item-radio off"><input type="radio" checked disabled> Padrão</div>
+                <div class="item-radio off"><input type="radio" disabled> Grande</div>
+                <div class="txt-cinza">Esta página utiliza sempre um tamanho pequeno do tipo de letra.</div>
+            </div>
+
+            <div class="opcao-config">
+                <div class="titulo-config">Largura</div>
+                <div class="item-radio"><input type="radio" name="medida" id="pad" checked><label for="pad">Padrão</label></div>
+                <div class="item-radio"><input type="radio" name="medida" id="lar"><label for="lar">Largo</label></div>
+            </div>
+
+            <div class="opcao-config">
+                <div class="titulo-config">Cor (beta)</div>
+                <div class="item-radio"><input type="radio" name="tema" id="auto"><label for="auto">Automático</label></div>
+                <div class="item-radio"><input type="radio" name="tema" id="claro" checked><label for="claro">Claro</label></div>
+                <div class="item-radio"><input type="radio" name="tema" id="escuro"><label for="escuro">Escuro</label></div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
